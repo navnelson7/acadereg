@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block contenido %}
+{{consulta.nombres}}
+<ol class="table">
+	{% for nombre in consulta  %}
+	<li>	{{nombre.nombres}} {{nombre.apellidos}} </li>
+	{% endfor %}	
+</ol>
+
+{% endblock contenido %}
+{% block titulo %}
+	{{titulo}}
+{% endblock titulo %}
